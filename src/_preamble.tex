@@ -1,0 +1,65 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Add your info here %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\fullName} {Your Name}
+\newcommand{\email} {your@email.here}
+
+% comment out any of these you don't need
+\newcommand{\website} {your.domain}
+\newcommand{\phone} {123-456-7890}
+% \newcommand{\linkedin} {linkedin.com/in/yourlinkedin}
+% \newcommand{\github} {github.com/yourgithub}
+\newcommand{\cityState} {City, State}
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Page Setup %%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+
+% Stop numbering pages
+\pagenumbering{gobble}
+
+% Set margins
+\usepackage{geometry}
+\geometry{letterpaper, margin=0.75in}
+
+% Style section headers
+\usepackage[compact]{titlesec}
+\titleformat{\section}
+  {\normalfont\scshape\large\bfseries\centering}{}{1em}{}[{\titlerule[0.5pt]}]
+
+% Style lists
+\usepackage{enumitem}
+\setlist{itemsep=0.1em, leftmargin=*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Custom Elements %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\entryHeader}[2]{
+  \textbf{#1} \hfill #2 \\
+}
+
+\newcommand{\entrySubheader}[2]{
+  \textit{#1} \hfill #2 \\[-15pt]
+}
+
+\newcommand{\entryHeadline}[1]{
+  \\[3pt] \textit{#1} \vspace{-3pt}
+}
+
+\newcommand{\entryListStart}{
+  \begin{itemize}
+}
+
+\newcommand{\entryListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\listItem}[1]{
+  \item{#1}
+}
+
+\begin{document}
